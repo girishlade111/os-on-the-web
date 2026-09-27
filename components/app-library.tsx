@@ -168,7 +168,7 @@ export function AppLibrary({ isVisible, onClose }: AppLibraryProps) {
                           key={app.id}
                           className={cn(
                             "relative",
-                            index === 3 && category.apps.length > 4 && "grid grid-cols-3 gap-0.5",
+                            index === 3 && category.apps.length > 4 ? "grid grid-cols-3 gap-0.5" : "",
                           )}
                         >
                           <AppIcon id={app.id} name={app.name} color={app.color} icon={app.icon} size="small" />

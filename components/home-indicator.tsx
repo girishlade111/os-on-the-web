@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react"
 import { useAppState } from "@/lib/app-state"
 
 interface HomeIndicatorProps {
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 export function HomeIndicator({ children }: HomeIndicatorProps) {
